@@ -23,3 +23,7 @@ df.columns = ['age','gender','belong to']
 print(df)
 print(df.index)
 print(df.columns)
+
+df.rename(columns = {'age':'연령', 'gender':'남녀','belong to':'학교'}, inplace=True)
+df.rename(index = {'student1':'학생1','student2':'학생2'},inplace = True)
+print(df)
